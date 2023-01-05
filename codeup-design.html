@@ -5,86 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body style="background-color: #F0F0F0; font-family: 'Abel', sans-serif;">
 
 <!--nav section with four links and a hamburger. logo text disappears on small-->
-codeup design
 
-SERVICES
-WORK
-BLOG
-CONTACTS
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        <img src="/images/logo.png" alt="logo" style="width:105px;height:105px;">
+        <a class="navbar-brand d-none d-lg-block" href="#">codeup design</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTS</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
 <!--Bold H1 centered and wraps-->
 <header>
-    <h1>VISUAL DESIGNS & WEB DEVELOPMENT</h1>
-<!--Bold centered h2-->
-    <h2>FROM PARK CITY, UTAH</h2>
+    <h1 style="text-align: center; font-family: 'Anton', sans-serif;">VISUAL DESIGNS & WEB DEVELOPMENT</h1>
+    <!--Bold centered h2-->
+    <h2 style="text-align: center; font-family: 'Anton', sans-serif">FROM PARK CITY, UTAH</h2>
 </header>
 
 <!--on smallest setting will go from four across to two across-->
+<div class="row">
+    <div class="col-sm-12 d-flex justify-content-center col-md-6 d-flex justify-content-md-end">
 <div>
-DESIGN
+    DESIGN
 </div>
 <div>
-DEVELOP
+    DEVELOP
+</div>
+    </div>
+    <div class="col-sm-12 d-flex justify-content-center col-md-6 d-flex justify-content-md-start">
+<div>
+    SUPPORT
 </div>
 <div>
-SUPPORT
+    HOST
 </div>
-<div>
-HOST
+    </div>
 </div>
 
 <!--horizontal line 80% 2px darkgray disappears on small view-->
+<div class="d-none d-md-block" style="background-color: darkgray; margin: auto; height: 2px; width: 80%">
+</div>
 
 <div class="row">
-    <div class="column col-sm-12 col-md-8">
+    <div class="column col-sm-12 col-lg-8 ">
 
-<!--div with four inner div's and header. header is centered in all views and goes from one column to two column when on small-->
-<div class="row">
-<div class="column col-sm-12 col-md-6"><!--    1-->
-<section>
-SELECTED WORK
-</section>
-<section>
-FEATURED PROJECT
-</section>
-<section>
-FEATURED PROJECT
-</section>
-</div>
-<div class="column col-sm-12 col-md-6"><!--    2-->
-<section>
-    FEATURED PROJECT
-</section>
-    <section>
-        FEATURED PROJECT
-    </section>
+        <!--div with four inner div's and header. header is centered in all views and goes from one column to two column when on small-->
+        <div class="row">
+                <section class="d-flex justify-content-center">
+                    SELECTED WORK
+                </section>
+            <div class="column col-sm-12 col-md-6"><!--    1-->
+                <section class="d-flex justify-content-center d-flex justify-content-md-end">
+                    FEATURED PROJECT
+                </section>
+                <section class="d-flex justify-content-center d-flex justify-content-md-end">
+                    FEATURED PROJECT
+                </section>
+            </div>
+            <div class="column col-sm-12 col-md-6"><!--    2-->
+                <section class="d-flex justify-content-center d-flex justify-content-md-start">
+                    FEATURED PROJECT
+                </section>
+                <section class="d-flex justify-content-center d-flex justify-content-md-start">
+                    FEATURED PROJECT
+                </section>
 
-    </div>
-</div>
-</div><!--        column one wrapper-->
-<!--div with four inner div's and a header that is centered always in one column and disappears on anything smaller than large.-->
-     <div class="column col-sm-12 col-md-4"><!--    2-->
+            </div>
+        </div>
+    </div><!--        column one wrapper-->
+    <!--div with four inner div's and a header that is centered always in one column and disappears on anything smaller than large.-->
+    <div class="col-lg-4 d-none d-lg-block"><!--    2-->
 
-<section>
-THE LAST
-</section>
-<section>
-THE ADMIN BAR AND ABSOLUTE POSITIONING
-</section>
-<section>
-NIBBLER AWESOME WEBSITE TESTING
-</section>
-<section>
-HOW TO GET GOOGLE TO LIKE YOU
- </section>
- <section>
-LAST TWEET
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid amet autem commodi delectus, enim explicabo, incidunt ipsum iusto labore magnam quod recusandae repellat reprehenderit soluta ullam voluptatem voluptates voluptatum?
- </section>
-     </div><!--        column two wrapper-->
+        <section class="d-flex justify-content-center">
+            THE LAST
+        </section>
+        <section style="font-family: 'Anton', sans-serif">
+            THE ADMIN BAR AND ABSOLUTE POSITIONING
+        </section>
+        <section style="font-family: 'Anton', sans-serif">
+            NIBBLER AWESOME WEBSITE TESTING
+        </section>
+        <section style="font-family: 'Anton', sans-serif">
+            HOW TO GET GOOGLE TO LIKE YOU
+        </section>
+        <section>
+            LAST TWEET
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid amet autem commodi delectus, enim explicabo, incidunt ipsum iusto labore magnam quod recusandae repellat reprehenderit soluta ullam voluptatem voluptates voluptatum?
+        </section>
+    </div><!--        column two wrapper-->
 
 </div> <!--row wrapper-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
