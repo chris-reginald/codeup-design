@@ -6,9 +6,10 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design.css">
 
 </head>
-<body style="background-color: #F0F0F0; font-family: 'Abel', sans-serif;">
+<body>
 
 <!--nav section with four links and a hamburger. logo text disappears on small-->
 
@@ -37,46 +38,39 @@
         </div>
     </div>
 </nav>
+    <!--<div class="container">-->
 <div class="container">
 
-
-
-
-
-
-
     <!--Bold H1 centered and wraps-->
-    <!--<div class="container">-->
     <header>
-        <h1 style="text-align: center; font-family: 'Anton', sans-serif; font-size:70px; margin-top: 40px">VISUAL DESIGNS & WEB DEVELOPMENT</h1>
+        <h1>VISUAL DESIGNS & WEB DEVELOPMENT</h1>
         <!--Bold centered h2-->
-        <h2 style="text-align: center; font-family: 'Anton', sans-serif; margin: 30px 0; font-size: 45px">FROM PARK CITY, UTAH</h2>
+        <h2>FROM PARK CITY, UTAH</h2>
     </header>
 
     <!--on smallest setting will go from four across to two across-->
     <div class="row">
         <div class="col-sm-12 d-flex justify-content-center col-md-6 d-flex justify-content-md-end p-2">
-            <div style="background-color: #e6563b; border-radius: 50%;border-style: solid; border-width: 10px;height: 100px; width: 100px; border-color: white; display: flex; justify-content: center; align-content: center; flex-direction: column; text-align: center; margin-right:10px; color: white;font-family: 'Anton', sans-serif">
+            <div id="bigcircle" style="background-color: #e6563b;  margin-right:10px; ">
                 DESIGN
             </div>
-            <div style="background-color: #eb9d3a; border-radius: 50%;border-style: solid; border-width: 10px;height: 100px; width: 100px; border-color: white; display: flex; justify-content: center; align-content: center; flex-direction: column; text-align: center; margin-left:10px; color: white;font-family: 'Anton', sans-serif">
+            <div id="bigcircle" style="background-color: #eb9d3a; margin-left:10px;">
                 DEVELOP
             </div>
         </div>
         <div class="col-sm-12 d-flex justify-content-center col-md-6 d-flex justify-content-md-start p-2">
-            <div style="background-color: #7cb06c; border-radius: 50%;border-style: solid; border-width: 10px;height: 100px; width: 100px; border-color: white; display: flex; justify-content: center; align-content: center; flex-direction: column; text-align: center;  color: white;font-family: 'Anton', sans-serif; margin-right: 10px;">
+            <div id="bigcircle" style="background-color: #7cb06c; margin-right: 10px;">
                 SUPPORT
             </div>
-            <div style="background-color: #00aba9; border-radius: 50%;border-style: solid; border-width: 10px;height: 100px; width: 100px; border-color: white; display: flex; justify-content: center; align-content: center; flex-direction: column; text-align: center; margin-left:10px ; color: white;font-family: 'Anton', sans-serif">
+            <div id="bigcircle" style="background-color: #00aba9;margin-left:10px ; ">
                 HOST
             </div>
         </div>
     </div>
 
     <!--horizontal line 80% 2px darkgray disappears on small view-->
-    <div class="d-none d-md-block" style="background-color: darkgray; margin:30px auto 0 auto; height: 2px; width: 100% ">
+    <div id="line" class="d-none d-md-block">
     </div>
-
     <div class="row">
         <div class="column col-sm-12 col-lg-8 ">
 
@@ -87,84 +81,70 @@
                 </section>
                 <section class="d-none d-lg-block d-xl-none" style="height: 30px;">
                 </section>
-                <div class="column col-sm-12 col-md-6"><!--    1-->
+                <div class="column col-sm-12 col-md-6">
                     <section class="d-flex justify-content-center d-flex justify-content-md-end">
                         <div class="column">
                             <img src="./images/apple-ipad.jpg" class="img-fluid border border-5" alt="...">
                             <div style="display: flex; flex-direction: row; justify-content: space-between">
                                 <div>FEATURED PROJECT</div>
                                 <ul style="display: flex; flex-direction: row">
-                                    <li style="background-color: #e6563b; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #e6563b; margin: 0 5px;">
                                         D
                                     </li>
-                                    <li style="background-color: #eb9d3a; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #eb9d3a;  margin: 0 5px; ">
                                         D
                                     </li>
-                                    <li style="background-color: #7cb06c; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #7cb06c;  margin: 0 5px;">
                                         S
                                     </li>
-                                    <li style="background-color: #00aba9; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #00aba9; margin: 0 5px; ">
                                         H
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </section>
-
                 </div>
-                <div class="column col-sm-12 col-md-6"><!--    1-->
+                <div class="column col-sm-12 col-md-6">
                     <section class="d-flex justify-content-center d-flex justify-content-md-start">
                         <div class="column">
                             <img src="./images/macbook.jpg" class="img-fluid border border-5" alt="...">
                             <div style="display: flex; flex-direction: row; justify-content: space-between">
                                 <div>FEATURED PROJECT</div>
                                 <ul style="display: flex; flex-direction: row">
-                                    <li style="background-color: #e6563b; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #e6563b; margin: 0 5px;">
                                         D
                                     </li>
-                                    <li style="background-color: #eb9d3a; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #eb9d3a;  margin: 0 5px; ">
                                         D
                                     </li>
-                                    <li style="background-color: #7cb06c; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #7cb06c;  margin: 0 5px;">
                                         S
                                     </li>
-                                    <li style="background-color: #00aba9; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #00aba9; margin: 0 5px; ">
                                         H
                                     </li>
                                 </ul>
                             </div>
-
-                    </section>
+                        </section>
                 </div>
-                <div class="column col-sm-12 col-md-6"><!--    1-->
+                <div class="column col-sm-12 col-md-6">
                     <section class="d-flex justify-content-center d-flex justify-content-md-end">
                         <div class="column">
                             <img src="./images/man.jpg" class="img-fluid border border-5" alt="...">
                             <div style="display: flex; flex-direction: row; justify-content: space-between">
                                 <div>FEATURED PROJECT</div>
                                 <ul style="display: flex; flex-direction: row">
-                                    <li style="background-color: #e6563b; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #e6563b; margin: 0 5px;">
                                         D
                                     </li>
-                                    <li style="background-color: #eb9d3a; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #eb9d3a;  margin: 0 5px; ">
                                         D
                                     </li>
-                                    <li style="background-color: #7cb06c; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #7cb06c;  margin: 0 5px;">
                                         S
                                     </li>
-                                    <li style="background-color: #00aba9; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #00aba9; margin: 0 5px; ">
                                         H
                                     </li>
                                 </ul>
@@ -173,27 +153,23 @@ justify-content: center; align-content: center; flex-direction: row; text-align:
                     </section>
 
                 </div>
-                <div class="column col-sm-12 col-md-6"><!--    1-->
+                <div class="column col-sm-12 col-md-6">
                     <section class="d-flex justify-content-center d-flex justify-content-md-start">
                         <div class="column">
                             <img src="./images/security.jpg" alt="..." class="img-fluid border border-5">
                             <div style="display: flex; flex-direction: row; justify-content: space-between">
                                 <div>FEATURED PROJECT</div>
                                 <ul style="display: flex; flex-direction: row">
-                                    <li style="background-color: #e6563b; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #e6563b; margin: 0 5px;">
                                         D
                                     </li>
-                                    <li style="background-color: #eb9d3a; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #eb9d3a;  margin: 0 5px; ">
                                         D
                                     </li>
-                                    <li style="background-color: #7cb06c; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px; font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #7cb06c;  margin: 0 5px;">
                                         S
                                     </li>
-                                    <li style="background-color: #00aba9; border-radius: 50%;height: 18px; width: 18px;  display: flex;
-justify-content: center; align-content: center; flex-direction: row; text-align: center; margin: 0 5px;font-size: 12px ;font-family: 'Anton', sans-serif">
+                                    <li id="lil_circle" style="background-color: #00aba9; margin: 0 5px; ">
                                         H
                                     </li>
                                 </ul>
@@ -203,22 +179,23 @@ justify-content: center; align-content: center; flex-direction: row; text-align:
                 </div>
             </div>
         </div><!--        column one wrapper-->
+
         <!--div with four inner div's and a header that is centered always in one column and disappears on anything smaller than large.-->
-        <div class="col-lg-4 d-none d-lg-block"><!--    2-->
+        <div class="col-lg-4 d-none d-lg-block">
             <div class="row">
                 <div class="column">
                     <section class="d-flex justify-content-center" style="margin: 50px 0">
                         THE LAST
                     </section>
                     <ul style="list-style: none;">
-                        <li style="font-family: 'Anton', sans-serif; display:flex; flex-direction: row">
-                            <img src="./images/mobile-phone.jpg" class="img-fluid border border-2 float-left " style="height: 80px; width: 80px; margin: 0 10px 40px 0;" alt="..." ><h3 > THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
+                        <li id="last" >
+                            <img src="./images/mobile-phone.jpg" id="thumbnail" class="img-fluid border border-2 float-left "  alt="..." ><h3 > THE ADMIN BAR AND ABSOLUTE POSITIONING</h3>
                         </li>
-                        <li style="font-family: 'Anton', sans-serif; display:flex; flex-direction: row">
-                            <img src="./images/head.jpg" alt="..." class="img-fluid border border-2 float-left " style="height: 80px; width: 80px; margin: 0 10px 40px 0;"><h3>NIBBLER AWESOME WEBSITE TESTING</h3>
+                        <li id="last">
+                            <img src="./images/head.jpg" alt="..." id="thumbnail" class="img-fluid border border-2 float-left "><h3>NIBBLER AWESOME WEBSITE TESTING</h3>
                         </li>
-                        <li style="font-family: 'Anton', sans-serif; display:flex; flex-direction: row">
-                            <img src="./images/ipad.jpg" alt="..." class="img-fluid border border-2 float-left " style="height: 80px; width: 80px; margin: 0 10px 40px 0;"><h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
+                        <li id="last">
+                            <img src="./images/ipad.jpg" alt="..." id="thumbnail" class="img-fluid border border-2 float-left "><h3>HOW TO GET GOOGLE TO LIKE YOU</h3>
                         </li>
                         <li>
                             <p style="margin-bottom: 8px">LAST TWEET</p>
